@@ -2,8 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Sign from '@/components/Sign'
+import React from 'react'
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode
+}
+
+export default function Layout({ children }: LayoutProps) {
   const router = useRouter()
   const meta = {
     title: 'Next.js Subscription Starter',
