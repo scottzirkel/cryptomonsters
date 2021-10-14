@@ -9,14 +9,30 @@ const Home: NextPage = () => {
     <>
       <section className="space-y-4">
         <div>
-          <h1
-            className="text-6xl text-lime-300 font-black z-10 relative font-headline transform rotate-1 skew-y-1 hover:-rotate-1 hover:-skew-y-1"
-            style={{
-              textShadow: '4px 6px #000300',
-            }}
-          >
-            CryptoMonsters
+          <h1 className="text-8xl text-lime-300 font-black leading-tight z-10 relative font-headline transform rotate-1 skew-y-1 hover:-rotate-1 hover:-skew-y-1">
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-lime-400 to-teal-400 filter saturate-200">
+              <span
+                className="text-lime-200 mix-blend-overlay"
+                style={{
+                  textShadow: '4px 6px #000300',
+                }}
+              >
+                Monsters
+              </span>
+            </span>
           </h1>
+          <h2 className="-mt-6 text-4xl text-lime-200 font-black font-headline leading-tight">
+            <span className="bg-clip-text text-transparent bg-gradient-to-t to-green-400 from-green-800 filter saturate-150">
+              <span
+                className="text-lime-200 mix-blend-overlay"
+                style={{
+                  textShadow: '2px 3px #000300',
+                }}
+              >
+                Of the Baruvian Jungle
+              </span>
+            </span>
+          </h2>
           <p>
             Who knows what is lurking in the mysterious{' '}
             <strong>
@@ -36,14 +52,14 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="w-full bg-cyan-300 py-12 text-cyan-900 relative" id="about">
-          <h2
-            className="text-5xl mb-6 font-black z-10 relative font-headline transform rotate-[-0.5deg] skew-y-[-0.5deg] hover:rotate-[0.5deg] hover:skew-y-[0.5deg]"
+          <h3
+            className="text-5xl mb-6 font-black z-10 relative font-headline transform rotate-[-0.5deg] skew-y-[-0.5deg] hover:rotate-[0.5deg] hover:skew-y-[0.5deg] filter saturate-150"
             style={{
               textShadow: '4px 6px #b3f552',
             }}
           >
             About the Monsters
-          </h2>
+          </h3>
           <div className="space-y-4 max-w-md mx-auto">
             <p>Flavor text</p>
             <p>
@@ -68,14 +84,14 @@ const Home: NextPage = () => {
         </div>
         <div className="relative" id="team">
           <div className="py-12">
-            <h2
-              className="text-5xl mb-6 text-lime-300 font-black z-10 relative font-headline transform rotate-[0.5deg] skew-y-[0.5deg] hover:rotate-[-0.5deg] hover:skew-y-[-0.5deg]"
+            <h3
+              className="text-5xl mb-6 text-lime-300 font-black z-10 relative font-headline transform rotate-[0.5deg] skew-y-[0.5deg] hover:rotate-[-0.5deg] hover:skew-y-[-0.5deg] filter saturate-150"
               style={{
                 textShadow: '2px 4px #000300',
               }}
             >
               Meet your Jungle Guides
-            </h2>
+            </h3>
             <div>
               <h3>Courtney Huddleston</h3>
               <p>Courtney draws things.</p>
