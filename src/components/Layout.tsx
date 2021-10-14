@@ -11,8 +11,8 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   const router = useRouter()
   const meta = {
-    title: 'Next.js Subscription Starter',
-    description: 'Brought to you by Vercel, Stripe, and Supabase.',
+    title: 'Monsters of the Baruvian Jungle',
+    description: 'Can you find all of the shy monsters?',
     cardImage: '/og.png',
   }
 
@@ -50,11 +50,11 @@ export default function Layout({ children }: LayoutProps) {
               style={{ backgroundImage: "url('vines-dual.png')" }}
             ></div>
             <div
-              className="absolute left-0 z-0 w-48 h-48 mix-blend-multiply bg-opacity-75 bg-top-left bg-contain bg-no-repeat"
-              style={{ backgroundImage: "url('trees-left.png')" }}
+              className="absolute left-0 z-0 w-64 h-full mix-blend-multiply bg-opacity-75 bg-top-left bg-contain bg-no-repeat"
+              style={{ backgroundImage: "url('trees-left-tall.png')" }}
             ></div>
           </div>
-          <div className="absolute right-0 w-1/2 h-full z-0 mix-blend-multiply">
+          <div className="absolute right-0 w-1/2 h-full z-0 mix-blend-multiply hidden md:block">
             <div
               className="absolute right-0 z-0 w-96 h-48 mix-blend-multiply bg-opacity-75 bg-contain bg-no-repeat"
               style={{ backgroundImage: "url('vine-single.png')" }}
