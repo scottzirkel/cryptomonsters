@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import MintOptions from '@/components/MintOptions'
 import Womblydon from '@/components/Womblydon'
 import Hidden from '@/components/Hidden'
-import Sign from '@/components/Sign'
 
 const Home: NextPage = () => {
   return (

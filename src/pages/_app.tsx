@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import 'tailwindcss/tailwind.css'
-import { NextPage } from 'next'
 import { AppProps } from 'next/app'
 
 import Layout from '@/components/Layout'
