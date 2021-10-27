@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/solid'
+import Web3 from 'web3'
+
+interface Window {
+  ethereum: any
+}
 
 interface Plan {
   name: string
@@ -28,6 +33,16 @@ const plans: Plan[] = [
 
 export default function MintOptions() {
   const [selected, setSelected] = useState(plans[0])
+
+  const connectWallet = async () => {
+    if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
+      const web3 = new Web3(window.ethereum)
+    }
+
+    console.log('try to connect wallet')
+
+    await window.ethereum.enable();
+  }
 
   return (
     <div className="w-full text-left">
@@ -83,6 +98,7 @@ export default function MintOptions() {
         </RadioGroup>
         <div className="text-center">
           <button
+            onClick={connectWallet}
             type="button"
             className="mx-auto bg-cyan-200 text-cyan-900 py-2 px-4 rounded hover:bg-cyan-300"
           >
