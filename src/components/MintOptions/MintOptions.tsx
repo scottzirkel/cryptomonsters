@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/solid'
+import { initializeProvider } from '@metamask/providers'
 
 interface Plan {
   name: string
