@@ -38,10 +38,6 @@ export default function Layout({children}: LayoutProps) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Luckiest+Guy&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className="flex flex-col min-h-screen bg-cyan-900 text-white space-y-8">
         <div className="flex max-w-screen overflow-hidden">
